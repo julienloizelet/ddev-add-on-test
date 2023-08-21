@@ -29,7 +29,7 @@ jobs:
       contents: write
 
     env:
-      TEST_TAG: v0.x.y
+      TEST_TAG: v0.x.2
 
     outputs:
       version_number: ${{ steps.set-version-number.outputs.version_number }}
