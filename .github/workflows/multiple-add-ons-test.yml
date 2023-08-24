@@ -17,8 +17,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ddev_version: [ stable ]
-        add_on: ["ddev/ddev-redis-commander", "ddev/ddev-mongo", "ddev/ddev-adminer"]
+        ddev_version: [ "stable", "HEAD" ]
+        add_on:
+          - "ddev/ddev-redis-commander"
+          - "ddev/ddev-mongo"
+          - "ddev/ddev-adminer"
+          - "ddev/ddev-redis"
+          - "ddev/ddev-solr"
+          - "ddev/ddev-sqlsrv"
+          - "ddev/ddev-pdfreactor"
+          - "ddev/ddev-memcached"
+          - "ddev/ddev-cron"
+          - "ddev/ddev-elasticsearch"
 
     name: Add-on test
     runs-on: ubuntu-latest
