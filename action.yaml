@@ -59,8 +59,6 @@ runs:
 
   steps:
 
-
-
     - uses: Homebrew/actions/setup-homebrew@master
       concurrency:
         group: ${{ github.workflow }}-${{ github.ref }}
