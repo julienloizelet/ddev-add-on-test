@@ -16,6 +16,8 @@ on:
 permissions:
   contents: read
 
+  
+
 jobs:
   add-ons-test:
     strategy:
