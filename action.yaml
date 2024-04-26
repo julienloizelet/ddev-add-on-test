@@ -56,14 +56,15 @@ inputs:
 runs:
   using: "composite"
 
-  concurrency:
-    group: ${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
-
 
   steps:
 
+
+
     - uses: Homebrew/actions/setup-homebrew@master
+      concurrency:
+        group: ${{ github.workflow }}-${{ github.ref }}
+        cancel-in-progress: true
 
     - name: Environment setup
       shell: bash
