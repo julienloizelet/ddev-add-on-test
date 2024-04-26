@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - test/concurrency
     paths-ignore:
       - "**.md"
   pull_request:
